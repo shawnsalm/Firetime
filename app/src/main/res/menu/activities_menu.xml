@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.wit.mobileapp.firetime.controllers.activities.ActivitiesActivity">
+    <item
+        android:id="@+id/action_add_activity"
+        android:orderInCategory="100"
+        android:title="@string/action_add_activity"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_add_time"
+        android:orderInCategory="300"
+        android:title="@string/action_add_time"
+        app:showAsAction="never" />
+</menu>

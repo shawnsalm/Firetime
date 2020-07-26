@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.wit.mobileapp.firetime"
+    android:versionCode="2"
+    android:versionName="1.0001">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/firetime_logo"
+        android:label="@string/app_name"
+        android:appCategory="productivity"
+        android:logo="@drawable/firetime_logo"
+        android:roundIcon="@drawable/firetimelogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".controllers.activities.ActivitiesActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".intentServices.RefreshIntentService" />
+
+        <activity android:name=".controllers.activities.HistoriesActivity"
+            android:label="@string/activity_time"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controllers.activities.CategoriesActivity"
+            android:label="@string/navigation_drawer_categories"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".controllers.activities.SaveActivityActivity"
+            android:label="@string/save_activity"/>
+        <activity android:name=".controllers.activities.AboutActivity"
+            android:label="@string/navigation_drawer_about"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".controllers.activities.SaveHistoryActivity"
+            android:label="@string/save_time"/>
+        <activity android:name=".controllers.activities.SaveCategoryActivity"
+            android:label="@string/save_category"/>
+        <activity
+            android:name=".controllers.activities.OrderActivitiesActivity"
+            android:label="@string/order_activities"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
